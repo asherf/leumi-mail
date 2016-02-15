@@ -1,1 +1,6 @@
 beautifulsoup4==4.3.2
+requests
+oauth2client
+dropbox
+ipython
+ipdb
