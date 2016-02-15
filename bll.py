@@ -24,7 +24,7 @@ def do_work():
 def load_config():
     fn = os.path.join(os.environ['HOME'], ".leumi-mail-params.json")
     config = json.loads(open(fn).read())
-    return config['pdf_password'], config['pdfs_location']
+    return str(config['pdf_password']), config['pdfs_location']
 
 def export_htmls(pdf_location, pdf_password):
     accounts = set()
